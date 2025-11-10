@@ -130,7 +130,7 @@ function renderExtensions(extensions){
 function enableDarkMode(){
     const icon = document.getElementById('dark-mode-icon');
     if (icon){
-    icon.src = "public/images/icon-sun.svg";
+    icon.src = "./public/images/icon-sun.svg";
     icon.alt = "Toggle Light Mode";
     }
     document.body.classList.add('dark-mode');
@@ -139,7 +139,7 @@ function enableDarkMode(){
 function disableDarkMode(){
     const icon = document.getElementById('dark-mode-icon');
     if (icon){
-        icon.src = "public/images/icon-moon.svg";
+        icon.src = "./public/images/icon-moon.svg";
         icon.alt = "Toggle Dark Mode";
     }
     document.body.classList.remove('dark-mode');
