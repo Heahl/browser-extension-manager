@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="public/images/favicon-32x32.png" type="image/x-icon">
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+<header>
+    <img src="public/images/logo.svg" alt="Extensions Logo" class="header-img">
+    <button class="dark-mode-toggle">
+        <img src="" alt="" id="dark-mode-icon"></button>
+</header>
+<section class="filtering-container">
+    <h1 class="list-header">Extensions List</h1>
+    <div class="filters">
+        <button class="filter" id="filter-all">All</button>
+        <button class="filter" id="filter-active">Active</button>
+        <button class="filter" id="filter-inactive">Inactive</button>
+    </div>
+</section>
+<section class="extensions-container">
+    <template class="extension-container" id="extension-container">
+        <div class="extension-content">
+        <div class="extension-info-container">
+            <img src="" alt="" class="extension-image" >
+            <div class="extension-text-container">
+                <h4 class="extension-title"></h4>
+                <p class="extension-text"></p>
+            </div>
+        </div>
+        <div class="extension-handlers-container">
+            <button class="remove-extension">Remove</button>
+            <label class="switch">
+                <input type="checkbox" class="checkbox toggle-extension">
+                <span class="slider"></span>
+            </label>
+        </div>
+        </div>
+    </template>
+</section>
+<footer>
+     <a href="https://www.frontendmentor.io?ref=challenge">Challenge by Frontend Mentor.</a>
+    <a href="https://www.github.com/heahl">Coded by heahl</a>
+</footer>
+</body>
+</html>
+
+
+
+<!--
+- Toggle extensions between active and inactive states
+- Filter active and inactive extensions
+- Remove extensions from the list
+- Select their color theme
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+-->
